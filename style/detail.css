@@ -1,0 +1,194 @@
+.detail {
+    padding-top: 110px;
+    background-color: whitesmoke;
+    padding-bottom: 5rem;
+}
+
+.banner-img-detail {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../resimler/photo-1583221742001-9ad88bf233ff.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.banner-img-detail svg {
+    color: white;
+    margin: 6px 10px;
+}
+
+.banner-img-detail h3 {
+    color: white;
+    margin: 0;
+}
+
+.detail-header {
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+    padding: 35px;
+    margin-top: 5rem;
+}
+
+.column-2 {
+    padding-left: 50px;
+}
+
+.column-2 h3 {
+    margin-bottom: 40px;
+}
+
+.detail-product-img {
+    border: 1px solid rgb(212, 212, 212);
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-content: center;
+}
+
+.product-detail h3 {
+    color: #D92938;
+    font-weight: 600;
+}
+
+.contact-group {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.whatsapp-btn,
+.call-btn {
+    padding: 8px 20px;
+    border: 2px solid;
+    font-weight: 600;
+    transition: all .2s ease-in ;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    border-color: #25d366;
+    margin-right: 25px;
+}
+
+.call-btn {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.whatsapp-btn:hover {
+    background-color: #075e54;
+    border-color: #075e54;
+}
+
+.call-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.bi {
+    margin-right: 10px;
+}
+
+.warning {
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .detail {
+        padding-top: 90px;
+        padding-bottom: 5rem;
+    }
+
+    .banner-img-detail {
+        height: 100px;
+        background-position-y: 50%;
+    }
+
+    .detail-header {
+        background-color: rgba(0, 0, 0, 0.445);
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .detail-header h3 {
+        font-size: 10px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 15px;
+        margin-top: 2rem;
+    }
+
+    .column-2 {
+        padding: 0 12px;
+        margin-top: 10px;
+    }
+
+    .column-2 h3 {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .column-2 p {
+        font-size: 14px;
+    }
+
+    .column-2 ul li {
+        font-size: 13px;
+    }
+
+    .contact-group button {
+        font-size: 12px;
+        padding: 8px 8px;
+    }
+
+    .contact-group {
+        justify-content: space-between;
+    }
+
+    .bi {
+        margin-right: 0px;
+    }
+
+    .warning {
+        margin-top:30px;
+    }
+
+    .whatsapp-btn {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+    
+    .detail {
+        padding-top: 100px;
+        padding-bottom: 5rem;
+    }
+
+    .banner-img-detail {
+        height: 140px;
+        background-position-y: 50%;
+    }
+
+    .column-2 h3{
+        margin-top: 20px;
+    }
+}

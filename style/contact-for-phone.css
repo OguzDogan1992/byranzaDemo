@@ -1,0 +1,55 @@
+.contact-for-phone {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    position: absolute;
+    bottom: -40%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.whatsapp-button,
+.call-button {
+    width: 100%;
+    padding: 8px 5px;
+    font-weight: 600;
+    border: 0;
+}
+
+.whatsapp-button {
+    background-color: #25d366;
+    color: white;
+}
+
+.call-button {
+    background-color: #4681f4;
+    color: white;
+}
+
+.contact-for-phone svg {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-for-phone {
+        position: sticky;
+        bottom: 0;
+        opacity: 1;
+        font-size: 15px;
+        pointer-events: all;
+    }
+
+    .contact-for-phone svg {
+        margin-right: 7px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .contact-for-phone {
+        position: sticky;
+        bottom: 0;
+        opacity: 1;
+        pointer-events: all;
+    }
+}

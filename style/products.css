@@ -1,0 +1,261 @@
+.products {
+    padding-top: 110px;
+    padding-bottom: 5rem;
+}
+
+.banner-img-products {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../resimler/products-banner.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.category-h h3 {
+    font-weight: 600;
+}
+
+.category {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.category-btn {
+    text-decoration: none;
+}
+
+.category-section {
+    position: relative;
+    display: flex;
+    aspect-ratio: 16/7;
+    overflow: hidden;
+}
+
+.category-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    display: grid;
+    place-content: center;
+}
+
+.category-img img {
+    transition: transform .8s;
+}
+
+.category-img img:hover {
+    transform: scale(1.1);
+}
+
+/* .category-section:hover{
+    transform: scale(1.05);
+} */
+
+.category-name {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.category-name h5 {
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 10px;
+    margin: 0;
+}
+
+/* products card */
+
+.products-list {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 47px;
+}
+
+.products-card {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid rgb(209, 209, 209);
+    text-align: center;
+}
+
+.products-card-body {
+    padding: 20px;
+}
+
+.products-card-body h5 {
+    margin-bottom: 15px;
+}
+
+.product-img {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+}
+
+/* .detail-btn {
+    padding: 7px 18px;
+    background-color: #D92938;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: all .2s ease;
+    transition: transform .8s;
+}
+
+.detail-btn:hover {
+    background-color: #97021d;
+} */
+
+.cta {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background: #D92938;
+    transition: .2s;
+    font-weight: 600;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.cta:hover {
+    background-color: #97021d;
+}
+
+span:nth-child(2) {
+    width: 20px;
+    margin-left: 20px;
+    position: relative;
+    top: 12%;
+}
+
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: #97021d;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .category {
+        width: 100%;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .category-name h5 {
+        font-size: 10px;
+    }
+
+    .products {
+        padding-top: 90px;
+        padding-bottom: 5rem;
+    }
+    
+    .banner-img-products {
+        height: 100px;
+    }
+
+    .products-list {
+        margin-top: 4%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+
+    .products {
+        padding-top: 100px;
+        padding-bottom: 5rem;
+    }
+
+    .banner-img-products {
+        height: 140px;
+    }
+
+    .category {
+        width: 100%;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .category-section,
+    .category-img {
+        width: 100%;
+    }
+    
+    .category-name h5 {
+        font-size: 10px;
+    }
+
+    .products-list {
+        margin-top: 4%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+
+    .products-list {
+        margin-top: 4%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 25px;
+    }
+}

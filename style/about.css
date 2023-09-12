@@ -1,0 +1,160 @@
+.about {
+    padding-top: 110px;
+    background-color: whitesmoke;
+    padding-bottom: 5rem;
+}
+
+.banner-img-about {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    background: url("../resimler/about-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -800px;
+}
+
+.banner-img-about h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    margin-top: 5rem;
+    width: 100%;
+    height: 648px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.about-info-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    /* background-color: #1F67A6; */
+    /* background-color: #BF8034; */
+    color: white;
+}
+
+.about-info {
+    padding: 0 70px;
+}
+
+.about-info h3 {
+    font-weight: 600;
+    color: #D92938;
+}
+
+.about-info p {
+    color: black;
+    font-weight: 600;
+
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+}
+
+.review-btn {
+    padding: 7px 18px;
+    margin-top: 3%;
+    background-color: white;
+    border: 2px solid #D92938;
+    color: #D92938;
+    font-weight: 700;
+    transition: all .2s ease;
+}
+
+.review-btn:active,
+.review-btn:hover {
+    background-color: #D92938;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        display: block;
+        height: 100%;
+    }
+
+    .about-info-wrapper {
+        font-size: 12px;
+    }
+
+    .about-info {
+        padding: 25px 40px;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .about {
+        padding-top: 90px;
+        padding-bottom: 5rem;
+    }
+
+    .banner-img-about {
+        height: 100px;
+        background-position-y: 50%;
+    }
+
+    .banner-img-about h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+    .wrapper {
+        display: block;
+        height: 100%;
+    }
+
+    .about-info {
+        padding: 40px 40px;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .about {
+        padding-top: 100px;
+        padding-bottom: 5rem;
+    }
+
+    .banner-img-about {
+        height: 140px;
+        background-position-y: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+
+    .about-img {
+        width: 100%;
+        height: 484px;
+    }
+
+    .about-info {
+        padding: 50px;
+
+    }
+
+    .wrapper {
+        height: 80%;
+    }
+
+    .banner-img-about {
+        height: 200px;
+        background-position-y: 70%;
+    }
+
+}

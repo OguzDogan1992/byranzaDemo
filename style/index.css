@@ -1,0 +1,260 @@
+.home-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 150px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    height: 700px;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+}
+
+.home {
+    padding-top: 110px;
+    margin-bottom: 5rem;
+}
+
+.products-btn {
+    padding: 7px 18px;
+    margin: 30px 40px 0 0;
+    background-color: #D92938;
+    border: 2px solid #D92938;
+    color: white;
+    font-weight: 600;
+    transition: all .2s ease;
+}
+
+.products-btn:active,
+.products-btn:hover {
+    background-color: #97021d;
+    border: 2px solid #97021d;
+}
+
+.products-btn:active {
+    transform: scale(.95);
+}
+
+.contact-btn {
+    padding: 7px 18px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+    transition: all .2s ease;
+}
+
+.contact-btn:active,
+.contact-btn:hover {
+    background-color: white;
+    color: #D92938;
+}
+
+.contact-btn:active {
+    transform: scale(.95);
+}
+
+.home-bg img {
+    width: 100%;
+}
+
+.category-card-wrapper {
+    width: 100%;
+    transition: all .34s ease-in-out;
+}
+
+.category-card-wrapper:hover {
+    transform: translateY(-15px);
+}
+
+.category-card {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border: 1px solid #cacaca;
+    /* border-radius: 30px; */
+    position: relative;
+    text-align: center;
+    z-index: -1;
+}
+
+.category-card h5 {
+    font-weight: 600;
+}
+
+.category-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card-description {
+    width: 100%;
+    height: 180px;
+    margin: 0 0 1rem 0;
+    /* overflow: scroll; */
+}
+
+.category-card-img {
+    border-radius: 100px;
+    overflow: hidden;
+    border: 15px solid white;
+    width: 155px;
+    height: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: -130px;
+    z-index: 2;
+}
+
+.category-card-img img {
+    width: 190px;
+}
+
+.ranza-img,
+.dolap-img,
+.yatak-img,
+.yorgan-img {
+    width: 150px;
+    height: 150px;
+    border: 13px solid white;
+    border-radius: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -80px;
+    left: 73px;
+}
+
+.review-btn {
+    padding: 7px 18px;
+    background-color: white;
+    border: 2px solid #D92938;
+    color: #D92938;
+    font-weight: 700;
+    transition: all .2s ease;
+}
+
+.review-btn:active,
+.review-btn:hover {
+    background-color: #D92938;
+    color: white;
+}
+
+.box-area {
+    position: relative;
+}
+
+.box-area h3 {
+    font-weight: 700;
+}
+
+.box {
+    background-color: #D92938;
+    width: 4%;
+    height: 5px;
+    position: absolute;
+    bottom: -4px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .home {
+        padding-top: 65px;
+    }
+
+    .home-bg {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+        padding: 0;
+    }
+
+    .home-bg h2 {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .bg {
+        width: 100%;
+        top: -10px;
+    }
+
+    .products-btn,
+    .contact-btn {
+        font-size: 9px;
+        padding: 3px 7px;
+        margin: 5px 10px 0 0;
+    }
+
+    .box {
+        width: 10%;
+    }
+
+    .category-card-wrapper:hover {
+        transform: none;
+    }
+    
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+
+    .home {
+        padding-top: 80px;
+    }
+
+    .home-bg {
+        width: 100%;
+        height: 300px;
+        padding: 0;
+    }
+
+    .home-bg h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    /* .video-bg {
+        width: 100%;
+        top: -10px;
+    } */
+
+    .bg {
+        width: 100%;
+        top: -10px;
+    }
+
+    .products-btn,
+    .contact-btn {
+        font-size: 11px;
+        padding: 5px 9px;
+        margin: 5px 20px 0 0;
+    }
+    .category-card-wrapper:hover {
+        transform: none;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+    .home-bg {
+        height: 500px;
+        padding: 0;
+    }
+
+    .category-card-wrapper:hover {
+        transform: none;
+    }
+}
